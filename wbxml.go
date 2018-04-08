@@ -10,7 +10,9 @@
 
 package wbxml
 
-// #cgo pkg-config: libwbxml2
+// //cgo pkg-config: libwbxml2
+// #cgo CFLAGS: -I. -IE:/cpp/include
+// #cgo LDFLAGS: -LE:/cpp/lib -lwbxml2 -lexpat
 //
 // #include <stdlib.h>
 //
